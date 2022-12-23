@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -web-kit-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*---------------------*/
+.products {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/products/background_mobile.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/products/background_mobile@2x.png);
+  }
+}
+
+.products__label {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  padding-bottom: 12px;
+}
+
+.products__item {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 123px;
+  height: 420px;
+  background: #aec6a5;
+  border-radius: 24px;
+}
+.products__item__:not(:last-child) {
+  padding-bottom: 168px;
+}
+.products__item__::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: red;
+  background-image: url(../images/products/icecream_mobile.jpg);
+}
+
+.products__item::before {
+  content: "acm";
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  width: 200px;
+  height: 211px;
+  top: 0;
+  transform: translateY(-108px);
+  width: 200px;
+  height: 211px;
+  background-color: red;
+  background-image: url(../images/products/icecream_mobile.jpg);
+}
+
+.products__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  padding-bottom: 40px;
+}
+
+.products__info {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
+  padding-bottom: 101px;
+}
+
+.product__button {
+  width: 30px;
+  height: 15px;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}

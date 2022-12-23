@@ -1,0 +1,18 @@
+.products {
+  max-width: 320px;
+  margin: 0 auto;
+  background-color: red;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/products/background_decktop.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/products/background_decktop@2x.png);
+  }
+}
+
+.container {
+  width: 320px;
+}

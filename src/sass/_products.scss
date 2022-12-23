@@ -1,0 +1,121 @@
+.products {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.22;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #131313;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    // mobile screen
+    background-image: url(../images/products/background_mobile.png);
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/background_mobile@2x.png);
+    }
+}
+
+.products__label {
+    font-family: "Seymour One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #131313;
+
+    padding-bottom: 12px;
+}
+
+.products__list {
+}
+
+.products__item {
+    position: relative;
+    display: block;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 123px;
+
+    height: 420px;
+        background: #aec6a5;
+    border-radius: 24px;
+    &__:not(:last-child){
+    padding-bottom: 168px;}
+
+    &__::before {
+        content: '';
+        display: block;
+        position: absolute;
+        
+        background-color: red;
+        background-image: url(../images/products/icecream_mobile.jpg);
+    }
+}
+
+.products__item::before{
+    content: "acm";
+    display: block;
+    margin: 0 auto;
+        position: absolute;
+        width: 200px;
+            height: 211px;
+        top: 0;
+        transform: translateY(-108px);
+        width: 200px;
+        height: 211px;
+        background-color: red;
+        background-image: url(../images/products/icecream_mobile.jpg);
+}
+
+.products__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #131313;
+    padding-bottom: 40px;
+}
+
+.products__info {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.76;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #131313;
+    padding-bottom: 101px;
+}
+
+.product__button {
+    width: 30px;
+    height: 15px;
+}

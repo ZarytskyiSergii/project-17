@@ -2,7 +2,7 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: red;
   color: #2f2f37;
   max-width: 960px;
   padding: 16px;
@@ -25,4 +25,24 @@
   background-image: url('../images/logo.png');
   background-size: cover;
   background-position: center;
+}
+
+.products {
+
+  max-width: 320px;
+  margin: 0 auto;
+  background-color: red;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // mobile screen
+  background-image: url(../images/products/background_decktop.png);
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/products/background_decktop@2x.png);
+  }
 }
