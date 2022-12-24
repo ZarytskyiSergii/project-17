@@ -2,6 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
@@ -9,7 +13,38 @@
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/products.html"></include>
-    <include src="./partials/footer.html"></include>
+    <include src="./partials/customers-reviews.html"></include>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper_customers = new Swiper('.customers__slider', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        dots: !1,
+        infinite: !0,
+        speed: 3e3,
+        slidesToShow: 1,
+        adaptiveHeight: !0,
+        autoplay: !0,
+        autoplaySpeed: 2e3,
+      });
+      const swiper_gallery = new Swiper('.gallery__slider', {
+      //   pagination: {
+      //     el: '.swiper-pagination',
+      //   },
+        dots: !1,
+        infinite: !0,
+        speed: 1e3,
+        slidesToShow: 1,
+        adaptiveHeight: !0,
+        autoplay: !0,
+        autoplaySpeed: 2e3,
+      });
+    </script>
   </body>
 </html>
