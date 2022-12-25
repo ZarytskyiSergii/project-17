@@ -26,10 +26,8 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/background/background_tablet2x.png);
     }
-    // padding-bottom: 216px;
   }
 
-  // Desktop
   @include dq(only-tablet) {
     background-image: url(../images/background/background_desktop1x.png);
 
@@ -41,7 +39,6 @@
     padding-bottom: 216px;
   }
   @include dq(desktop) {
-   padding-bottom: 128px;
-}
- 
+    padding-bottom: 128px;
+  }
 }
