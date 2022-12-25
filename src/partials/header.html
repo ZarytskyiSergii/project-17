@@ -1,0 +1,119 @@
+    <!-- Шапка порталу -->
+    <Header>
+        <div class="container header">
+            <a  href="./index.html" class="logo">
+                <img src="./img/Logo.svg" alt="logo">
+            </a>
+            <nav>
+                <ul class="header-nav list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">How it’s made?</a></li>
+                    <li><a href="#">Our products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg class="menu-toggle-svg">
+                    <use href="./img/mobi-menu.svg#icon-menu-burger"></use>
+                </svg>
+            </button>
+
+            <button type="button" class="menu-mobi-button button-in-header" data-modal-open-header>
+                Buy now
+                <svg class="menu-mobi-button-svg">
+                    <use href="./img/mobi-menu.svg#icon-arrow-right"></use>
+                </svg>
+            </button>
+        </div>
+    </Header>
+    
+
+
+
+    <!-- Мобільне меню -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="menu-container-blok">
+            <button class="menu-toggle js-close-menu">
+                <svg class="menu-toggle-svg">
+                    <use href="./img/mobi-menu.svg#icon-menu-close"></use>
+                </svg>
+            </button>
+            <ul class="menu-mobi list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">How it’s made?</a></li>
+                <li><a href="#">Our products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <button type="button" class="menu-mobi-button button-in-mobi" data-modal-open-header1>
+                Buy now
+                <svg class="menu-mobi-button-svg">
+                    <use href="./img/mobi-menu.svg#icon-arrow-right"></use>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+
+            <!-- MODAL -->  
+        <div class="backdrop is-hidden" data-modal-header>
+            <div class="modal">
+                <button class="button-modal" data-modal-close-header>
+                    <svg class="button-modal-svg">
+                        <use href="./img/mobi-menu.svg#icon-modal-close"></use>
+                    </svg>
+                </button>
+
+                <h2 class="modal-titel">Buy now</h2>
+                <form action="form" autocomplete="off">
+                    <ul class="list modal-list">
+                        <li class="modal-list-element">
+                            <label class="modal-list-element-label" for="ice cream">
+                                <input type="checkbox" name="header-modal" value="ice cream">
+                                <div class="modal-list-element-div1"></div>
+                                <div class="modal-list-element-div2"></div>
+                                <h3 class="modal-list-element-titel">ice cream</h3>
+                            </label>
+                        </li>
+                        <li class="modal-list-element">
+                            <label class="modal-list-element-label" for="ice coffee">
+                                <input type="checkbox" name="header-modal" value="ice coffee">
+                                <div class="modal-list-element-div1"></div>
+                                <div class="modal-list-element-div2"></div>
+                                <h3 class="modal-list-element-titel">ice coffee</h3> 
+                            </label>
+                        </li>
+                        <li class="modal-list-element">
+                            <label class="modal-list-element-label" for="milkshake">
+                                <input type="checkbox" name="header-modal" value="milkshake">
+                                <div class="modal-list-element-div1"></div>
+                                <div class="modal-list-element-div2"></div>
+                                <h3 class="modal-list-element-titel">milkshake</h3>
+                            </label>
+                        </li>
+                    </ul>
+                    <ul class="modal-form list">
+                        <li class="modal-form-element">
+                            <label for="header-name"></label>
+                            <input type="text" name="header-name" id="header-name" placeholder="Name" required autofocus></li>
+                        <li class="modal-form-element">
+                            <label for="header-phone"></label>
+                            <input type="tel" name="header-phone" id="header-phone" placeholder="Phone" required>
+                        </li>
+                        <li class="modal-form-element">
+                            <label for="header-coment"></label>
+                            <textarea name="header-coment" id="header-coment" placeholder="Comment"></textarea>
+                        </li>
+                    </ul>
+
+                    <button class="button-submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+<script defer src="js/mobile-menu.js" type="module"></script>
+<script src="./js/modal-header.js" type="module"></script>
