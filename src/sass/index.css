@@ -1,3 +1,7 @@
+body {
+  font-family: "Montserrat";
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -34,6 +38,7 @@ h2 {
   background-size: cover;
   background-position: center;
   padding-bottom: 59px;
+  overflow: hidden;
   background-image: url(../images/background/background_mobile1x.png);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -44,7 +49,6 @@ h2 {
 @media screen and (min-width: 481px) {
   .container {
     background-image: url(../images/background/background_tablet1x.png);
-    padding-bottom: 216px;
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
@@ -52,15 +56,20 @@ h2 {
     background-image: url(../images/background/background_tablet2x.png);
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .container {
     background-image: url(../images/background/background_desktop1x.png);
-    padding-bottom: 128px;
+    padding-bottom: 216px;
   }
 }
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 2dppx) {
   .container {
     background-image: url(../images/background/background_desktop2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-bottom: 128px;
   }
 }
 
@@ -98,42 +107,54 @@ h2 {
   line-height: 1.86;
 }
 .customers__response {
+  text-align: center;
   margin: 0 auto;
   font-weight: 400;
   font-size: 12px;
   line-height: 2.55;
   overflow: hidden;
-  color: #FCFCFC;
-  width: 280px;
-  height: 256px;
+  color: #fcfcfc;
   background-color: #84a178;
   border-radius: 10px;
-  padding: 35px 39px;
   margin-bottom: 32px;
+  height: 186px;
+  width: 202px;
+  padding: 35px 39px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .customers__response {
-    width: 705px;
-    height: 138px;
+    width: 545px;
+    height: 82px;
+    padding: 28px 80px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    font-size: 14px;
+    line-height: 1.8571428571;
   }
 }
 @media screen and (min-width: 1200px) {
   .customers__response {
-    width: 968px;
-    height: 138px;
+    width: 750px;
+    height: 52px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    font-size: 16px;
+    line-height: 1.875;
+    padding: 43px 109px;
   }
 }
 .customers__pagination.swiper-pagination {
   bottom: 0;
+  position: relative;
 }
 .customers__pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #D9D9D9;
+  background: #d9d9d9;
 }
 .customers__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #84A178;
+  background: #84a178;
 }
 
 .gallery__img {
@@ -146,7 +167,7 @@ h2 {
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .gallery__img {
-    width: 704px;
+    width: 705px;
     height: 327px;
     border-radius: 18px;
     transform: translateY(-144px);

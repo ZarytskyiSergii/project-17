@@ -5,7 +5,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-    padding-bottom: 59px;
+  padding-bottom: 59px;
+  overflow: hidden;
 
   // Mobile
   background-image: url(../images/background/background_mobile1x.png);
@@ -25,11 +26,11 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/background/background_tablet2x.png);
     }
-    padding-bottom: 216px;
+    // padding-bottom: 216px;
   }
 
   // Desktop
-  @media screen and (min-width: 769px) {
+  @include dq(only-tablet) {
     background-image: url(../images/background/background_desktop1x.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -37,6 +38,10 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/background/background_desktop2x.png);
     }
-    padding-bottom: 128px;
+    padding-bottom: 216px;
   }
+  @include dq(desktop) {
+   padding-bottom: 128px;
+}
+ 
 }
