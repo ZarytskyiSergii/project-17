@@ -284,7 +284,7 @@
     height: 32px;
     background-color: inherit;
     border-radius: 10px;
-    // border: 1px solid rgba(0, 0, 0, 0.1);
+    border: transparent;
     bottom: 8px;
     left: 50%;
     transform: translateX(-50%);
@@ -295,7 +295,7 @@
 .ingredients__button:hover,
 .ingredients__button:focus,
 .ingredients__button:active {
-    // border: 1px solid rgba(0, 0, 0, 0.8);
+    border: transparent;
     transform: scaleX(1.5);
 }
 
