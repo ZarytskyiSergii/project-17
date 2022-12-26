@@ -4,17 +4,17 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    // opacity: 1;
-    // transition: opacity 250ms $timing-function;
-    // overflow-y: scroll;
+    background-color: var(--backdrop-color);
+    transition: opacity .15s cubic-bezier(.4, 0, .2, 1), visibility .15s cubic-bezier(.4, 0, .2, 1);
+    opacity: 1;
+    overflow-y: auto; 
 
     // &.is-hidden {
     //     opacity: 0;
     //     pointer-events: none;
     // }
 
-    // padding:;
+
 }
 
 .modalfranchize {
@@ -103,13 +103,13 @@
     margin-bottom: 12px ;
     @media screen and (min-width: 768px) {
      margin-bottom: 16px; 
-    display: flex;
-    align-items: center;
+    
     }
 }
     
 
 .modalfranchize_input{
+  display: block;
   width: 100%;
   height: 32px;
   padding: 8px 48px 7px 12px ;
@@ -117,13 +117,13 @@
   border: 1px solid #84A178;
   border-radius: 10px;
   outline: transparent;
-  
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width:768px) {
     width: 368px;
     height: 42px;
     padding: 11px 152px 11px 16px;
-    margin-left: auto;
-    margin-right: auto;
+    
   }
 
 }
@@ -145,6 +145,7 @@
 }
 .modalfranchize_area {
     position: relative;
+    margin-bottom: 24px;
     @media screen and (min-width: 768px) {
             margin-bottom: 32px;
             display: flex ;
@@ -167,6 +168,8 @@
         top: 16px;
         left: 11px;
         font-size: 14px;
+        top: 11px;
+        left: 80px;
     }
 }
 
@@ -179,7 +182,8 @@
     resize: none;
     outline: transparent;
     padding: 8px 48px 39px 12px;
-    
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (min-width: 768px){
        width: 368px;
        height: 84px;
