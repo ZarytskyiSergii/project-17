@@ -44,11 +44,11 @@
         srcset="./images/points-1200.png 1x, ./images/points-1200@2x.png 2x"
         media="(min-width: 1199px)"
       />
-      <img
-        class="hero__points"
+      <source
         srcset="./images/points-768.png 1x, ./images/points-768@2x.png 2x"
-        alt="points"
+        media="(min-width: 768px)"
       />
+      <img class="hero__points" src="./images/points-768.png" alt="points" />
     </picture>
     <picture>
       <source
@@ -59,9 +59,13 @@
         srcset="./images/desktop-1200.png 1x, ./images/desktop-1200@2x.png 2x"
         media="(min-width: 1199px)"
       />
+      <source
+        srcset="./images/tablet-768.png 1x, ./images/tablet-768@2x.png 2x"
+        media="(min-width: 768px)"
+      />
       <img
         class="hero__ice-cream"
-        srcset="./images/tablet-768.png 1x, ./images/tablet-768@2x.png 2x"
+        src="./images/tablet-768.png"
         alt="ice-cream"
       />
     </picture>
@@ -80,7 +84,11 @@
         "
         media="(min-width: 1200px)"
       />
-      <img class="hero__ice-creams" src="" alt="ice-creams" />
+      <img
+        class="hero__ice-creams"
+        src="./images/ice-creams-tablet-768.png"
+        alt="ice-creams"
+      />
     </picture>
   </div>
 </section>
