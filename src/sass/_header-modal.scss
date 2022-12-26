@@ -1,0 +1,301 @@
+.backdrop {
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    z-index: 996;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop .is-hidden .modal {
+    transform: translate(-50% -50%) scale(1.1);
+}
+
+.modal {
+    z-index: 997;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+        width: 280px;
+        height: 991px;
+
+        padding: 28px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 568px;
+        height: 644px;
+
+        padding: 32px 52px;
+    }
+
+    background-color: #FCFCFC;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+}
+
+.button-modal {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+
+    background-color: transparent;
+
+    &-svg {
+        background-color: transparent;
+
+        @media screen and (max-width: 767px) {
+            width: 20px;
+            height: 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.modal-titel {
+    font-family: 'Seymour One';
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+
+    color: #131313;
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+.modal-list {
+    display: flex;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+
+        gap: 84px;
+        margin-top: 83px;
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        gap: 32px;
+
+        margin-top: 103px;
+    }
+
+}
+
+.modal-list-element {
+    position: relative;
+    display: block;
+    width: 132px;
+    height: 136px;
+
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    background-color: #EFD478;
+    border: 2px solid #EFD478;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    border-radius: 15px;
+
+    &:first-child {
+        background-color: #FCFCFC;
+        border: 2px solid #96AF8C;
+        filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    }
+
+    &:last-child {
+        background-color: #FCFCFC;
+        border: 2px solid #D6936D;
+        filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    }
+
+    // &-label {
+    //     display: block;
+    // }
+
+    & input {
+        z-index: 999;
+        position: absolute;
+        top: -66px;
+        left: -2px;
+        width: 132px;
+        height: 198px;
+
+        border-radius: 98px 98px 15px 15px;
+        cursor: pointer;
+
+        opacity: 0;
+
+    }
+
+    &-div1,
+    &-div2 {
+        position: absolute;
+        top: -59px;
+        right: -2px;
+
+        transform: translate(-50% -50%);
+
+        width: 132px;
+        height: 132px;
+        border-radius: 50%;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-div1 {
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+    }
+
+    &:first-child &-div1 {
+        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    }
+
+    &:last-child &-div1 {
+        background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+    }
+
+    &-div2 {
+        top: -66px;
+        background-image: url(../images/header/header-modal-img-2.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/header/header-modal-img-2@2x.png);
+        }
+    }
+
+    &:first-child &-div2 {
+        background-image: url(../images/header/header-modal-img-1.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/header/header-modal-img-1@2x.png);
+        }
+    }
+
+    &:last-child &-div2 {
+        background-image: url(../images/header/header-modal-img-3.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/header/header-modal-img-3@2x.png);
+        }
+    }
+}
+
+.modal-list-element-titel {
+    display: block;
+    margin-top: 96px;
+    margin-bottom: 20px;
+
+    text-align: center;
+
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: uppercase;
+
+    color: #131313;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 32px;
+    gap: 12px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 40px;
+        gap: 16px;
+    }
+
+    &-element input,
+    &-element textarea {
+        width: 224px;
+        height: 32px;
+        outline: 0;
+
+        padding: 8px 12px;
+
+        @media screen and (min-width: 768px) {
+            width: 368px;
+            height: 42px;
+
+            padding: 11px 16px;
+        }
+
+        background-color: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+
+
+
+
+        &::placeholder {
+            font-size: 12px;
+            line-height: 1.4;
+
+            @media screen and (min-width: 768px) {
+                font-size: 14px;
+            }
+
+            color: #131313;
+        }
+
+    }
+
+    &-element textarea {
+        resize: none;
+        height: 65px;
+
+        @media screen and (min-width: 768px) {
+            height: 84px;
+        }
+    }
+}
