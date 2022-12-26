@@ -20,9 +20,9 @@
     background-image: url(../images/products/background_mobile.png);
 
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url(../images/products/background_mobile@2x.png);
     }
 
@@ -32,9 +32,9 @@
         background-image: url(../images/products/background_tablet.png);
 
         @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
             background-image: url(../images/products/background_tablet@2x.png);
         }
     }
@@ -46,9 +46,9 @@
         background-image: url(../images/products/background_decktop.png);
 
         @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
             background-image: url(../images/products/background_decktop@2x.png);
         }
     }
@@ -84,14 +84,16 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #131313;
-    margin-bottom: 148px;
+    margin-bottom: 156px;
 
     @media screen and (min-width: 768px) {
         font-size: 34px;
+        margin-bottom: 209px;
     }
 
     @media screen and (min-width: 1200px) {
         font-size: 36px;
+        margin-bottom: 311px;
     }
 }
 
@@ -120,6 +122,7 @@
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 32px) / 3);
         min-height: 428px;
+        padding-top: 108px;
         padding-left: 26px;
         padding-right: 26px;
     }
@@ -127,6 +130,7 @@
     @media screen and (min-width: 1200px) {
         flex-basis: calc((100% - 58px) / 3);
         min-height: 536px;
+        padding-top: 165px;
         padding-left: 64px;
         padding-right: 64px;
     }
@@ -143,21 +147,50 @@
         linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
     background-repeat: no-repeat;
-    top: calc(200 / 2 * (-1));
+    top: calc((200 / 2 * (-1)) - 8);
     left: 50%;
     transform: translateX(-50%);
     background-position: 0 -11, 0 0;
 
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/products/ice_cream_mobile@2x.png);
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/ice_cream_mobile@2x.png),
+         linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+    }
+@media screen and (min-width: 768px) {
+    background-repeat: no-repeat;
+    top: calc((200 / 2 * (-1)) - 15);
+    left: 50%;
+    transform: translateX(-50%);
+}
+    
+    @media screen and (min-width: 1200px) {
+        width: 302px;
+        height: 302px;
+        
+        
+        background: url(../images/products/ice_cream_decktop.png),
+            linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+            background-repeat: no-repeat;
+                top: calc((302 / 2 * (-1)) - 32);
+                left: 50%;
+                transform: translateX(-50%);
+                background-position: 0 -16, 0 0;
+                z-index: 2;
+
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/products/ice_cream_decktop2@2x.png),
+            linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;;
+        }
     }
 
     transform: scale(1);
-    transition: transform 250ms ;
+    transition: transform 250ms;
 }
 
 .list__item:nth-child(2)::before {
@@ -170,21 +203,49 @@
         linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
     box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
     background-repeat: no-repeat;
-    top: calc(200 / 2 * (-1));
+    top: calc((200 / 2 * (-1)) - 8);
     left: 50%;
     transform: translateX(-50%);
     background-position: 0 -11, 0 0;
 
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/products/ice_coffee_mobile@2x.png);
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/ice_coffee_mobile@2x.png),
+        linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;;
+           
+    }
+
+    @media screen and (min-width: 768px) {
+        background-repeat: no-repeat;
+            top: calc((200 / 2 * (-1)) - 15);
+            left: 50%;
+            transform: translateX(-50%);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 302px;
+            height: 302px;
+        background: url(../images/products/ice_coffee_decktop.png),
+            linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+            background-repeat: no-repeat;
+            top: calc((302 / 2 * (-1)) - 32);
+                left: 50%;
+                transform: translateX(-50%);
+                background-position: 0 -16, 0 0;
+
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/products/ice_coffee_decktop2@2x.png),
+            linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;;
+        }
     }
 
     transform: scale(1);
-    transition: transform 250ms ;
+    transition: transform 250ms;
 }
 
 .list__item:nth-child(3)::before {
@@ -197,27 +258,53 @@
         linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
     background-repeat: no-repeat;
-    top: calc(200 / 2 * (-1));
+    top: calc((200 / 2 * (-1)) - 8);
     left: 50%;
     transform: translateX(-50%);
     background-position: 0 -11, 0 0;
 
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/products//coctails_mobile@2x.png);
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products//coctails_mobile@2x.png),
+        linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;;
     }
 
-    transform: scale(1.1);
-    transition: transform 250ms  ;
+        @media screen and (min-width: 768px) {
+            background-repeat: no-repeat;
+            top: calc((200 / 2 * (-1)) - 15);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    @media screen and (min-width: 1200px) {
+        width: 302px;
+            height: 302px;
+        background: url(../images/products/coctails_decktop.png),
+            linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+            background-repeat: no-repeat;
+                top: calc((302 / 2 * (-1)) - 32);
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-position: 0 -16, 0 0;
+
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/products/coctails_decktop2@2x.png),
+            linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)),
+                #d9d9d9;;
+        }
+    }
+
+    transform: scale(1);
+    transition: transform 250ms;
 }
 
 .list__item:hover::before {
-
     transform: scale(1.15);
-
 }
 
 .list__item:nth-child(1) {
@@ -272,9 +359,6 @@
     margin-bottom: 50px;
 }
 
-
-
-
 .ingredients__button {
     position: absolute;
     display: flex;
@@ -289,7 +373,12 @@
     left: 50%;
     transform: translateX(-50%);
     transform: scaleX(1);
-    transition: transform 250ms ;
+    transition: transform 250ms;
+
+    @media screen and (min-width:1200px) {
+    bottom:52px;
+        
+    }
 }
 
 .ingredients__button:hover,
@@ -300,6 +389,5 @@
 }
 
 .modal-ingredients-icon {
-
     fill: #131313;
 }
