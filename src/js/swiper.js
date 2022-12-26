@@ -1,4 +1,4 @@
-const swiper_customers = new Swiper('.customers__slider', {
+ const swiper_customers = new Swiper('.customers__slider', {
         pagination: {
           el: '.swiper-pagination',
           clickable: true
@@ -12,9 +12,9 @@ const swiper_customers = new Swiper('.customers__slider', {
         autoplaySpeed: 2e3,
       });
       const swiper_gallery = new Swiper('.gallery__slider', {
-        //   pagination: {
-        //     el: '.swiper-pagination',
-        //   },
+      //   pagination: {
+      //     el: '.swiper-pagination',
+      //   },
         dots: !1,
         infinite: !0,
         speed: 1e3,
@@ -23,4 +23,3 @@ const swiper_customers = new Swiper('.customers__slider', {
         autoplay: !0,
         autoplaySpeed: 2e3,
       });
-    
