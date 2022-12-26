@@ -196,32 +196,32 @@
 
     &-div2 {
         top: -66px;
-        background-image: url(../../img/header-modal-img-2.png);
+        background-image: url(../images/header/header-modal-img-2.png);
 
         @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../../img/header-modal-img-2@2x.png);
+            background-image: url(../images/header/header-modal-img-2@2x.png);
         }
     }
 
     &:first-child &-div2 {
-        background-image: url(../../img/header-modal-img-1.png);
+        background-image: url(../images/header/header-modal-img-1.png);
 
         @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../../img/header-modal-img-1@2x.png);
+            background-image: url(../images/header/header-modal-img-1@2x.png);
         }
     }
 
     &:last-child &-div2 {
-        background-image: url(../../img/header-modal-img-3.png);
+        background-image: url(../images/header/header-modal-img-3.png);
 
         @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../../img/header-modal-img-3@2x.png);
+            background-image: url(../images/header/header-modal-img-3@2x.png);
         }
     }
 }
