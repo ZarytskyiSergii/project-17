@@ -1,4 +1,4 @@
-.modalMap__backdrop {
+.modalVideo__backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,14 +19,14 @@
     }
 }
 
-.modalMap {
+.modalVideo {
     width: 100%;
-    max-width: 568px;
+    max-width: 570px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     position: relative;
-    padding: 32px;
+    padding: 32px 60px;
     text-align: center;
     border: 2px solid #F8D24E;
     border-radius: 10px;
@@ -54,19 +54,14 @@
         color: $title-color;
         margin-bottom: 32px;
     }
-    &__image {
-        margin: 0 auto 32px;
-    }
-    &__button {
-        background: #F8D24E;
-        border-radius: 10px;
-        padding: 12px 34px;
-        color: #131313;
+    &__lorem {
+        margin-top: 32px;
         font-family: 'Montserrat';
         font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
-        display: inline-block
+        font-weight: 400;
+        font-size: 16px;
+        color: #131313;
+        line-height: 22px;
+        text-align: left;
     }
 }
