@@ -1,0 +1,53 @@
+.gallery {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom:393px;
+    overflow: hidden;
+    // Mobile
+    @media screen and (min-width:480px) {
+
+        background-image: url(../images/background/background_mobile1x.png);
+        
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/background/background_mobile2x.png);
+            }
+                
+    }
+    // Tablet
+    @media screen and (min-width:768px) {
+        background-image: url(../images/background/background_tablet1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/background/background_tablet2x.png);
+        }
+
+                                @include dq(tablet) {
+                                    padding-bottom: 479px;
+                                }
+    }
+
+    // Desktop
+    @include dq(only-tablet) {
+        background-image: url(../images/background/background_desktop1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/background/background_desktop2x.png);
+        }
+
+        padding-bottom: 379px;
+    }
+
+    @include dq(desktop) {
+        padding-bottom: 228px;
+    }
+}
