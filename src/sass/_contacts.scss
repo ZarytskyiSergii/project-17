@@ -3,7 +3,24 @@
 .contact {
     background: #84A178;
     padding-bottom: 60px;
-    max-height: 625px;
+    // 
+    @media screen and (max-width:767.98px) {
+        height: 1200px;
+        margin-bottom: -1;
+        
+    }
+    @media screen and (min-width:768px) and (max-width:1199.98px){
+
+        height: 400px;
+            margin-bottom: -1;
+ 
+        }
+
+        @media screen and (min-width:1200px) {
+
+            height: 600px;
+                margin-bottom: -1;
+        }
 }
 
 
