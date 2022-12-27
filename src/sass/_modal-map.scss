@@ -1,0 +1,61 @@
+.map__backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.map__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal {
+    width: 528px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin: 0 auto;
+    position: relative;
+    padding: 17px;
+}
+
+.modal label {
+    display: inline-block;
+    margin-bottom: 4px;
+    color: var(--contact-color);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+}
+.modal__close {
+    position: absolute;
+    cursor: pointer;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    /* fill: none; */
+}
+
+.modal__close:hover svg {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--active-color);
+}
+.map__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-size: 20px;
+    line-height: calc(28/20);
+}
