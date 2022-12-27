@@ -3,6 +3,7 @@
 .contact {
     background: #84A178;
     padding-bottom: 60px;
+    max-height: 625px;
 }
 
 
@@ -13,6 +14,8 @@
     max-width: 480px;
     padding-left: 20px;
     padding-right: 20px;
+    transform: translateY(-353px);
+    
     }
     @media screen and (min-width: 769px) and (max-width: 1200px) {
             width: 768px;
@@ -20,6 +23,7 @@
             padding-right: 32px;
             margin-left: auto;
             margin-right: auto;
+            transform: translateY(-299px);
         }
                 @media screen and (min-width: 1200px) {
                     width: 1200px;
@@ -27,6 +31,7 @@
                     padding-right: 16px;
                     margin-left: auto;
                     margin-right: auto;
+                    transform: translateY(-128px);
                 }
 
 }
