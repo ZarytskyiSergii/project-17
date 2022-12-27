@@ -303,9 +303,9 @@
     transition: transform 250ms;
 }
 
-.list__item:hover::before {
-    transform: scale(1.15);
-}
+// .list__item:hover::before {
+//     transform: scale(1.15);
+// }
 
 .list__item:nth-child(1) {
     background: #aec6a5;
