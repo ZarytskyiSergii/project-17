@@ -1,16 +1,14 @@
 (() => {
   const refs = {
-    openModalFrv: document.querySelector('[data-modal-open-franchize]'),
-    closeModalFrv: document.querySelector('[data-modal-close-franchize]'),
+    openModalBtn: document.querySelector('[data-modal-open-franchize]'),
+    closeModalBtn: document.querySelector('[data-modal-close-franchize]'),
     modal: document.querySelector('[data-modal-franchize]'),
-    body: document.querySelector('[data-body-modal]'),
   };
 
-  refs.openModalFrv.addEventListener('click', toggleModal);
-  refs.closeModalFrv.addEventListener('click', toggleModal);
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
-    refs.body.classList.toggle('overflow');
   }
 })();
