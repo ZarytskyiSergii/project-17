@@ -95,11 +95,11 @@
             <ul class="modal-form list">
                 <li class="modal-form-element">
                     <label for="header-name"></label>
-                    <input type="text" name="header-name" id="header-name" placeholder="Name" required autofocus>
+                    <input class="form-input" type="text" name="header-name" id="header-name" placeholder="Name" required autofocus pattern="[A-Za-z]{3,15}" title="Enter your first name, for example John">
                 </li>
                 <li class="modal-form-element">
                     <label for="header-phone"></label>
-                    <input type="tel" name="header-phone" id="header-phone" placeholder="Phone" required>
+                    <input class="form-input" type="tel" name="header-phone" id="header-phone" placeholder="Phone" required pattern="[+0-9]{9,13}" title="Enter a phone number. Example 380989898123">
                 </li>
                 <li class="modal-form-element">
                     <label for="header-coment"></label>
