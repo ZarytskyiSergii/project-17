@@ -8,6 +8,7 @@ $('.gallery__slider').slick({
   autoplaySpeed: 2000,
 });
 
+// 
 $('.customers__slider').slick({
   dots: true,
   infinite: true,
