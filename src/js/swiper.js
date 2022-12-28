@@ -1,7 +1,7 @@
 $('.gallery__slider').slick({
   dots: false,
   infinite: true,
-  speed: 1000,
+  speed: 3e3,
   slidesToShow: 1,
   adaptiveHeight: true,
   autoplay: true,
@@ -11,8 +11,9 @@ $('.gallery__slider').slick({
 $('.customers__slider').slick({
   dots: true,
   infinite: true,
-  speed: 300,
+  speed: 1e3,
   slidesToShow: 1,
   adaptiveHeight: true,
+  autoplay: true,
 });
 
