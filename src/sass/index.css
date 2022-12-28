@@ -65,6 +65,10 @@ img {
   margin: -1px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .backdrop {
   position: fixed;
   left: 0;
@@ -88,27 +92,24 @@ img {
 
 .modalfranchize {
   width: 280px;
-  height: 674px;
   position: relative;
-  padding: 28px;
+  padding: 25px;
   background: #FCFCFC;
   border: 2px solid #F8D24E;
   border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.backdropfranchize.is-hidden .modalfranchize {
+  transform: translate(-50%, -50%) scale(0.9);
 }
 @media screen and (min-width: 768px) {
   .modalfranchize {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
     width: 568px;
     height: 668px;
-    padding: 32px;
-  }
-  .backdropfranchize.is-hidden .modalfranchize {
-    transform: translate(-50%, -50%) scale(0.9);
+    padding: 32px 45px;
   }
 }
 .modalfranchize .modalfranchize_button {
@@ -134,7 +135,6 @@ img {
 
 .modalfranchize_title {
   text-align: center;
-  width: 221px;
   font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
@@ -155,7 +155,6 @@ img {
 }
 
 .modalfranchize_text {
-  width: 222px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -163,12 +162,11 @@ img {
   line-height: 1.4;
   color: #131313;
   margin-bottom: 24px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 @media screen and (min-width: 768px) {
   .modalfranchize_text {
-    width: 448px;
     font-size: 16px;
     margin-bottom: 32px;
   }
@@ -202,6 +200,14 @@ img {
     height: 42px;
     padding: 11px 152px 11px 16px;
   }
+}
+
+.modalfranchize_input:invalid {
+  border: 1px solid #f44336;
+}
+
+.modalfranchize_input:valid {
+  border: 1px solid rgb(2, 168, 46);
 }
 
 .modalfranchize_label {
@@ -277,11 +283,11 @@ img {
 }
 
 .modalfranchize_submit {
+  display: block;
   min-width: 114px;
   cursor: pointer;
   border-radius: 10px;
   padding: 12px 34px;
-  display: flex;
   align-items: center;
   font-family: "Montserrat";
   font-style: normal;
@@ -3164,6 +3170,10 @@ body {
   margin-left: 4px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .backdrop {
   position: fixed;
   left: 0;
@@ -3187,27 +3197,24 @@ body {
 
 .modalfranchize {
   width: 280px;
-  height: 674px;
   position: relative;
-  padding: 28px;
+  padding: 25px;
   background: #FCFCFC;
   border: 2px solid #F8D24E;
   border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.backdropfranchize.is-hidden .modalfranchize {
+  transform: translate(-50%, -50%) scale(0.9);
 }
 @media screen and (min-width: 768px) {
   .modalfranchize {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
     width: 568px;
     height: 668px;
-    padding: 32px;
-  }
-  .backdropfranchize.is-hidden .modalfranchize {
-    transform: translate(-50%, -50%) scale(0.9);
+    padding: 32px 45px;
   }
 }
 .modalfranchize .modalfranchize_button {
@@ -3233,7 +3240,6 @@ body {
 
 .modalfranchize_title {
   text-align: center;
-  width: 221px;
   font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
@@ -3254,7 +3260,6 @@ body {
 }
 
 .modalfranchize_text {
-  width: 222px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -3262,12 +3267,11 @@ body {
   line-height: 1.4;
   color: #131313;
   margin-bottom: 24px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 @media screen and (min-width: 768px) {
   .modalfranchize_text {
-    width: 448px;
     font-size: 16px;
     margin-bottom: 32px;
   }
@@ -3301,6 +3305,14 @@ body {
     height: 42px;
     padding: 11px 152px 11px 16px;
   }
+}
+
+.modalfranchize_input:invalid {
+  border: 1px solid #f44336;
+}
+
+.modalfranchize_input:valid {
+  border: 1px solid rgb(2, 168, 46);
 }
 
 .modalfranchize_label {
@@ -3376,11 +3388,11 @@ body {
 }
 
 .modalfranchize_submit {
+  display: block;
   min-width: 114px;
   cursor: pointer;
   border-radius: 10px;
   padding: 12px 34px;
-  display: flex;
   align-items: center;
   font-family: "Montserrat";
   font-style: normal;
@@ -3668,7 +3680,7 @@ body {
   opacity: 1;
   visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3741,7 +3753,7 @@ body {
   opacity: 1;
   visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3753,17 +3765,39 @@ body {
   pointer-events: none;
 }
 
+.thumb-video {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+}
+@media screen and (min-width: 768px) {
+  .thumb-video {
+    width: 568px;
+  }
+}
+
 .modalVideo {
-  width: 100%;
-  max-width: 570px;
+  width: calc(100% - 20px);
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   position: relative;
-  padding: 32px 60px;
+  padding: 28px;
   text-align: center;
   border: 2px solid #F8D24E;
   border-radius: 10px;
+}
+@media screen and (min-width: 480px) {
+  .modalVideo {
+    width: 480px;
+    padding: 32px 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modalVideo {
+    width: 568px;
+    padding: 32px 60px;
+  }
 }
 .modalVideo label {
   display: inline-block;
