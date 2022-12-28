@@ -1,17 +1,17 @@
 
 
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
+// .visually-hidden {
+//     position: absolute;
+//     white-space: nowrap;
+//     width: 1px;
+//     height: 1px;
+//     overflow: hidden;
+//     border: 0;
+//     padding: 0;
+//     clip: rect(0 0 0 0);
+//     clip-path: inset(50%);
+//     margin: -1px;
+// }
 
 :root {
     --primary-text-color: #131313;
@@ -70,6 +70,9 @@ body {
     background-attachment: fixed;
 }
 
+
+
+// я намагаюсь підключити модалку на кнопку 
 .backdrop {
 
     position: fixed;
@@ -91,11 +94,11 @@ body {
     pointer-events: none;
 }
 
-.backdrop .is-hidden .info-product__modal {
+.backdrop .is-hidden .info-product-modal {
     transform: translate(-50% -50%) scale(1.1);
 }
 
-
+    // я намагаюсь підключити модалку на кнопку 
 
 .info-product-modal {
     display: block;
@@ -329,8 +332,6 @@ body {
 
     }
 }
-
-
 
 .info-product__modal-btn {
     display: flex;
