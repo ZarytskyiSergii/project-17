@@ -19,15 +19,6 @@
     }
 }
 
-.thumb-video{
-margin-left: auto;
-margin-right: auto;
-    width: 280px;
-    @media screen and (min-width:768px) {
-        width: 568px;
-    }
-}
-
 .modalVideo {
     width: calc(100% - 20px);
     background: #FFFFFF;
@@ -46,7 +37,7 @@ margin-right: auto;
 
     @media screen and (min-width: 768px) {
             width: 568px;
-            padding: 32px 60px;
+            
         }
     
        
