@@ -16,6 +16,7 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     z-index: 996;
+    overflow-y: auto;
 }
 
 .is-hidden {
@@ -30,7 +31,7 @@
 .modal {
     z-index: 997;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
 
     transform: translate(-50%, -50%) scale(1);
