@@ -1,24 +1,27 @@
 .hero {
-  
   text-align: left;
   margin: 0 auto;
-  background-color: #84a178;
+  background-color: #84A178;
+
   @media screen and (max-width: 767px) {
     padding-top: 47px;
     height: 453px;
   }
+
   @media screen and (min-width: 768px) {
     height: 349px;
     padding-top: 13px;
   }
+
   @media screen and (min-width: 1200px) {
     height: 605px;
   }
 }
 
-.container{
-position: relative;
+.container {
+  position: relative;
 }
+
 .btns {
   @media screen and (max-width: 767px) {
     display: flex;
@@ -27,6 +30,7 @@ position: relative;
     padding: 0;
     align-items: center;
   }
+
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 12px;
@@ -34,6 +38,7 @@ position: relative;
     padding: 0;
     align-items: center;
   }
+
   @media screen and (min-width: 1200px) {
     display: flex;
     gap: 12px;
@@ -42,13 +47,14 @@ position: relative;
     align-items: center;
   }
 }
+
 .hero__text:nth-child(1) {
   font-size: 26px;
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.26;
   font-family: 'Seymour One';
-  color: #fcfcfc;
+  color: #FCFCFC;
   display: block;
 
   @media screen and (min-width: 1200px) {
@@ -57,17 +63,18 @@ position: relative;
     letter-spacing: 0.04em;
     line-height: 1.26;
     font-family: 'Seymour One';
-    color: #fcfcfc;
+    color: #FCFCFC;
     display: block;
   }
 }
+
 .hero__text:nth-child(2) {
   font-size: 26px;
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.26;
   font-family: 'Seymour One';
-  color: #fcfcfc;
+  color: #FCFCFC;
   display: block;
 
   @media screen and (min-width: 1200px) {
@@ -76,17 +83,18 @@ position: relative;
     letter-spacing: 0.04em;
     line-height: 1.26;
     font-family: 'Seymour One';
-    color: #fcfcfc;
+    color: #FCFCFC;
     display: block;
   }
 }
+
 .hero__text:nth-child(3) {
   font-size: 34px;
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.14;
   font-family: 'Seymour One';
-  color: #fcfcfc;
+  color: #FCFCFC;
 
   @media screen and (min-width: 1200px) {
     font-size: 38px;
@@ -94,15 +102,16 @@ position: relative;
     letter-spacing: 0.04em;
     line-height: 1.26;
     font-family: 'Seymour One';
-    color: #fcfcfc;
+    color: #FCFCFC;
     display: block;
   }
 }
+
 .hero__products {
   padding: 11px 26px;
   display: block;
   color: black;
-  border: 2px solid #f8d24e;
+  border: 2px solid #F8D24E;
   border-radius: 8px;
   font-size: 12px;
   line-height: 1.25;
@@ -113,7 +122,7 @@ position: relative;
     padding: 11px 26px;
     display: block;
     color: black;
-    border: 2px solid #f8d24e;
+    border: 2px solid #F8D24E;
     border-radius: 8px;
     font-size: 14px;
     line-height: 1.28;
@@ -121,8 +130,9 @@ position: relative;
     cursor: pointer;
   }
 }
+
 .hero__how-its-made {
-  color: #f8d24e;
+  color: #F8D24E;
   text-decoration: underline;
   font-size: 12px;
   line-height: 1.25;
@@ -130,7 +140,7 @@ position: relative;
   cursor: pointer;
 
   @media screen and (min-width: 1200px) {
-    color: #f8d24e;
+    color: #F8D24E;
     text-decoration: underline;
     font-size: 14px;
     line-height: 1.28;
@@ -138,60 +148,72 @@ position: relative;
     cursor: pointer;
   }
 }
+
 .hero__points {
   position: absolute;
   top: 171px;
+
   @media screen and (max-width: 767px) {
     position: absolute;
     top: 403px;
   }
+
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: 280px;
+    top: 266px;
   }
+
   @media screen and (min-width: 1200px) {
     position: absolute;
     top: 210px;
   }
 }
+
 .hero__ice-cream {
   @media screen and (max-width: 767px) {
     position: absolute;
     left: 83px;
     top: 236px;
   }
+
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: 20px;
-    left: 408px;
+    top: 7px;
+    left: 407px;
   }
+
   @media screen and (min-width: 1200px) {
     position: absolute;
     top: 31px;
     left: 652px;
   }
 }
+
 .hero__ice-creams {
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 184px;
     left: 32px;
   }
+
   @media screen and (min-width: 1200px) {
     position: absolute;
     top: 297px;
     left: 16px;
   }
 }
+
 .hero__p {
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
-    color: #fcfcfc;
+    color: #FCFCFC;
     display: block;
     font-size: 12px;
     line-height: 1.41;
@@ -200,9 +222,10 @@ position: relative;
     left: 216px;
     top: 211px;
   }
+
   @media screen and (min-width: 1200px) {
     position: absolute;
-    color: #fcfcfc;
+    color: #FCFCFC;
     display: block;
     font-size: 14px;
     line-height: 1.42;
@@ -211,12 +234,14 @@ position: relative;
     left: 257px;
   }
 }
+
 .hero__arrow {
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
-    color: #fcfcfc;
+    color: #FCFCFC;
     display: block;
     font-size: 12px;
     line-height: 1.4;
@@ -225,22 +250,26 @@ position: relative;
     left: 216px;
     top: 316px;
   }
+
   @media screen and (min-width: 1200px) {
     position: absolute;
     top: 483px;
     left: 257px;
   }
 }
+
 .number {
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
     font-weight: 900;
     font-size: 28px;
     line-height: 1.21;
     margin-bottom: 4px;
   }
+
   @media screen and (min-width: 1200px) {
     font-weight: 900;
     font-size: 46px;
@@ -248,21 +277,25 @@ position: relative;
     margin-bottom: 4px;
   }
 }
+
 .text {
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
-    color: #fcfcfc;
+    color: #FCFCFC;
     font-size: 8px;
     line-height: 1.25;
   }
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.21;
     margin-bottom: 4px;
   }
 }
+
 .hero__cafe {
   margin-bottom: 16px;
   display: block;
@@ -271,6 +304,7 @@ position: relative;
   text-align: right;
   margin-right: 12px;
 }
+
 .cafes {
   @media screen and (min-width: 768px) {
     list-style: none;
@@ -278,10 +312,21 @@ position: relative;
     top: 28px;
     left: 704px;
   }
+
   @media screen and (min-width: 1200px) {
     list-style: none;
     position: absolute;
     top: 56px;
     left: 1132px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .img-wrapper {
+    width: 170px;
+    height: 219px;
+    position: absolute;
+    bottom: -5px;
+    left: 3%;
   }
 }
