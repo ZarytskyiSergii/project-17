@@ -4,6 +4,11 @@
     openModalBtn: document.querySelector('[data-modal-open-header]'),
     closeModalBtn: document.querySelector('[data-modal-close-header]'),
     modal: document.querySelector('[data-modal-header]'),
+    openModalBtn1: document.querySelector("[data-modal-open-header1]"),
+    openModalBtn: document.querySelector("[data-modal-open-header]"),
+    closeModalBtn: document.querySelector("[data-modal-close-header]"),
+    modal: document.querySelector("[data-modal-header]"),
+    body: document.querySelector("[data-body-modal]"),
   };
 
   refs.openModalBtn1.addEventListener('click', toggleModal);
