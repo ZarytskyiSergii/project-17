@@ -148,14 +148,14 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     display: block;
   }
 }
 .about__paragraf-list {
   padding: 0 30px;
   text-align: center;
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     padding: 0;
   }
 }
@@ -171,19 +171,19 @@ ul {
   text-align: center;
   letter-spacing: 0.04em;
   color: #fcfcfc;
-  @media screen and (min-width: 480px) {
+  @media screen and(min-width: 480px) {
     width: 220px;
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     width: 336px;
     margin-left: auto;
     margin-right: auto;
     text-align: start;
     margin-bottom: 8px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and(min-width: 1200px) {
     width: 463px;
     text-align: start;
     margin-bottom: 8px;
@@ -199,19 +199,19 @@ ul {
   text-align: center;
   letter-spacing: 0.04em;
   color: #fcfcfc;
-  @media screen and (min-width: 480px) {
+  @media screen and(min-width: 480px) {
     width: 220px;
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     width: 336px;
     margin-left: auto;
     margin-right: auto;
     text-align: start;
     line-height: 1.75;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and(min-width: 1200px) {
     width: 463px;
     font-size: 14px;
     text-align: start;
@@ -228,17 +228,17 @@ ul {
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 480px) {
+  @media screen and(min-width: 480px) {
     width: 220px;
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     width: 334px;
     line-height: 1.92;
     text-align: start;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and(min-width: 1200px) {
     width: 463px;
     text-align: start;
     font-size: 14px;
@@ -263,10 +263,10 @@ ul {
   justify-content: space-between;
   color: #000;
 
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     margin-top: 32px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and(min-width: 1200px) {
     margin-top: 54px;
   }
   &:hover {
@@ -281,7 +281,7 @@ ul {
 }
 
 .about_list {
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -292,7 +292,7 @@ ul {
   padding-left: 25px;
   padding-right: 25px;
   margin-top: 50px;
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     width: 152px;
     padding: 0;
     margin-top: 60px;
@@ -318,14 +318,14 @@ ul {
   color: #fcfcfc;
   margin-bottom: 16px;
   font-style: normal;
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     font-weight: 700;
     font-size: 48px;
     line-height: 1.22;
     text-align: center;
     letter-spacing: 0.04em;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and(min-width: 1200px) {
     font-size: 58px;
     line-height: 1.22;
     text-align: center;
@@ -342,13 +342,13 @@ ul {
   line-height: 170%;
   text-align: center;
   color: #fcfcfc;
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     text-align: center;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and(min-width: 1200px) {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.75;
