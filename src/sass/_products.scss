@@ -356,7 +356,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: #131313;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 .ingredients__button {
@@ -371,6 +371,7 @@
     border: transparent;
     bottom: 8px;
     left: 50%;
+    color: transparent;
     transform: translateX(-50%);
     transform: scaleX(1);
     transition: transform 250ms;

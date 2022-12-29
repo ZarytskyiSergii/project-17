@@ -1405,7 +1405,7 @@ header {
   text-align: center;
   letter-spacing: 0.04em;
   color: #131313;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .ingredients__button {
@@ -1420,6 +1420,7 @@ header {
   border: transparent;
   bottom: 8px;
   left: 50%;
+  color: transparent;
   transform: translateX(-50%);
   transform: scaleX(1);
   transition: transform 250ms;
@@ -2990,8 +2991,6 @@ ul {
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
-  max-height: 100%;
-  overflow-y: auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3000,9 +2999,16 @@ ul {
 .backdropfranchize.is-hidden .modalfranchize {
   transform: translate(-50%, -50%) scale(0.9);
 }
+@media screen and (max-width: 767.98px) {
+  .modalfranchize {
+    max-height: 100%;
+    overflow-y: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .modalfranchize {
     width: 568px;
+    height: 668px;
     padding: 32px 45px;
   }
 }
