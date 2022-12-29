@@ -1,0 +1,35 @@
+<div class="modalfranchize__backdrop is-hidden" data-modal-franchize>
+    <div class="modalfranchize">
+        <button class="modalfranchize__close" data-modal-close-franchize>
+            <svg width="13" height="13">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form class="modalfranchize_form">
+            <p class="modalfranchize_title">Thank you for your interest in owning an Ice Cream shop</p>
+            <P class="modalfranchize_text"> 
+                Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.
+            </P>
+            <div class="modalfranchize_div">
+                <input type="text" id="name" name="name" class="modalfranchize_input" placeholder="Name" required pattern="[A-Za-z]{3,15}" title="Enter your first name, for example John">
+                <label for="name" class="modalfranchize_label"></label>
+            </div>
+            <div class="modalfranchize_div">
+                <input type="tel" id="tel" name="tel" class="modalfranchize_input"  placeholder="Phone" required pattern="[+0-9]{9,13}" title="Enter a phone number. Example 380989898123">
+                <label for="tel" class="modalfranchize_label"></label>
+            </div>
+            <div class="modalfranchize_div">
+                <input type="email" id="email" name="mail" class="modalfranchize_input" placeholder="Email" required>
+                <label for="tel" class="modalfranchize_label"></label>
+            </div>
+            <div class="modalfranchize_area">
+                <textarea name="comment" class="modalfranchize_textarea" id="comment" placeholder="Comment"></textarea>
+                <label for="comment" class="modalfranchize_bel"></label>
+            </div>
+            <button type="submit" class="modalfranchize_submit">Submit</button>
+    
+        </form>
+    
+    </div>
+</div>
+
