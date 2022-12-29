@@ -77,14 +77,14 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    transform: translateY(-24px);
+    transform: translateY(-32px);
   
     @media screen and (min-width: $tablet) {
-      transform: translateY(-164px);
+      transform: translateY(-144px);
     }
   
     @media screen and (min-width: $desktop) {
-      transform: translateY(-94px);
+      transform: translateY(-98px);
     }
 }
 }
