@@ -11,53 +11,7 @@
 //     margin: -1px;
 // }
 
-:root {
-    --primary-text-color: #131313;
-    --text-color-light: #fcfcfc;
-    --whity-color: #ffffff;
-    --black-color: #000000;
-    --yellow-accent: #f8d24e;
-    --yellow-bg: #efd478;
-    --green-accent: #9cbe8f;
-    --green-bg: #84a178;
-    --green-bg-two: #aec6a5;
-    --green-bg-tablet: #97af8d;
-    --brown-accent: #d6936d;
-    --light-grey: #e1e1e1;
-    --disabled-grey: #ababab;
 
-    //action colors
-    --green-hover-focus: #0a8817;
-
-    //linear-gradient
-    --yellow-linear-gradient: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
-    --green-linear-gradient: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
-    --brown-linear-gradient: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
-
-    //shadows
-    --shadows-products: 0px 8px 30px rgba(10, 136, 23, 0.25);
-    --shadows-contacts: 0px 8px 30px rgba(212, 20, 67, 0.1);
-
-    //fonts
-    --primery-font: "Montserrat";
-    --title-font: "Seymour One";
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    color: var(--primary-text-color);
-    font-family: var(--primery-font);
-    font-size: 16px;
-    line-height: 1.76;
-    letter-spacing: 0.04em;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
 
 //
 .info-product-modal__backdrop {
@@ -93,6 +47,10 @@ body {
     text-align: center;
     border: 2px solid #f8d24e;
     border-radius: 10px;
+    max-height: 100%;
+        overflow-y: auto;
+    
+    
     @media screen and (min-width: 480px) {
         max-width: 480px;
         padding: 32px 60px;

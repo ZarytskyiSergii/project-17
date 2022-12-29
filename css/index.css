@@ -67,6 +67,46 @@ img {
   margin: -1px;
 }
 
+:root {
+  --primary-text-color: #131313;
+  --text-color-light: #fcfcfc;
+  --whity-color: #ffffff;
+  --black-color: #000000;
+  --yellow-accent: #f8d24e;
+  --yellow-bg: #efd478;
+  --green-accent: #9cbe8f;
+  --green-bg: #84a178;
+  --green-bg-two: #aec6a5;
+  --green-bg-tablet: #97af8d;
+  --brown-accent: #d6936d;
+  --light-grey: #e1e1e1;
+  --disabled-grey: #ababab;
+  --green-hover-focus: #0a8817;
+  --yellow-linear-gradient: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+  --green-linear-gradient: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  --brown-linear-gradient: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+  --shadows-products: 0px 8px 30px rgba(10, 136, 23, 0.25);
+  --shadows-contacts: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  --primery-font: "Montserrat";
+  --title-font: "Seymour One";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: var(--primery-font);
+  font-size: 16px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .list {
   list-style-type: none;
   padding: 0;
@@ -542,6 +582,7 @@ img {
 }
 
 header {
+  overflow: visible;
   background-color: #84a178;
 }
 
@@ -792,6 +833,8 @@ header {
     width: 280px;
     height: 991px;
     padding: 28px;
+    max-height: 100%;
+    overflow-y: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1829,46 +1872,6 @@ ul {
   }
 }
 
-:root {
-  --primary-text-color: #131313;
-  --text-color-light: #fcfcfc;
-  --whity-color: #ffffff;
-  --black-color: #000000;
-  --yellow-accent: #f8d24e;
-  --yellow-bg: #efd478;
-  --green-accent: #9cbe8f;
-  --green-bg: #84a178;
-  --green-bg-two: #aec6a5;
-  --green-bg-tablet: #97af8d;
-  --brown-accent: #d6936d;
-  --light-grey: #e1e1e1;
-  --disabled-grey: #ababab;
-  --green-hover-focus: #0a8817;
-  --yellow-linear-gradient: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
-  --green-linear-gradient: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
-  --brown-linear-gradient: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
-  --shadows-products: 0px 8px 30px rgba(10, 136, 23, 0.25);
-  --shadows-contacts: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  --primery-font: "Montserrat";
-  --title-font: "Seymour One";
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  color: var(--primary-text-color);
-  font-family: var(--primery-font);
-  font-size: 16px;
-  line-height: 1.76;
-  letter-spacing: 0.04em;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
 .info-product-modal__backdrop {
   position: fixed;
   top: 0;
@@ -1901,6 +1904,8 @@ body {
   text-align: center;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+  max-height: 100%;
+  overflow-y: auto;
 }
 @media screen and (min-width: 480px) {
   .info-product-modal {
@@ -2982,9 +2987,11 @@ body {
   width: 280px;
   position: relative;
   padding: 25px;
-  background: #FCFCFC;
-  border: 2px solid #F8D24E;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
   border-radius: 10px;
+  max-height: 100%;
+  overflow-y: auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2996,20 +3003,19 @@ body {
 @media screen and (min-width: 768px) {
   .modalfranchize {
     width: 568px;
-    height: 668px;
     padding: 32px 45px;
   }
 }
 
 .modalfranchize_button {
   width: calc(100% - 20px);
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   position: relative;
   padding: 28px;
   text-align: left;
-  border: 2px solid #F8D24E;
+  border: 2px solid #f8d24e;
   border-radius: 10px;
 }
 @media screen and (min-width: 480px) {
@@ -3024,7 +3030,7 @@ body {
   }
 }
 
-.modalfranchize_button {
+.modalfranchize__close {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -3042,18 +3048,18 @@ body {
   background-color: transparent;
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modalfranchize_button {
+.modalfranchize__close {
   opacity: 0.7;
   cursor: pointer;
 }
-.modalfranchize_button:hover {
+.modalfranchize__close:hover {
   opacity: 1;
   transform: rotate(90deg);
-  fill: var(--green-hover-focus);
+  fill: #0a8817;
 }
-.modalfranchize_button:active {
+.modalfranchize__close:active {
   width: 24px;
-  fill: var(--yellow-accent);
+  fill: #f8d24e;
 }
 
 .modalfranchize_title {
@@ -3084,7 +3090,6 @@ body {
 }
 
 .modalfranchize_text {
-  width: 222px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -3121,7 +3126,7 @@ body {
   height: 32px;
   padding: 8px 48px 7px 12px;
   background-color: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84A178;
+  border: 1px solid #84a178;
   border-radius: 10px;
   outline: transparent;
   margin-left: auto;
@@ -3575,12 +3580,34 @@ body {
 }
 .modalMap__close {
   position: absolute;
-  cursor: pointer;
-  top: 17px;
-  right: 17px;
-  background: transparent;
-  border: none;
+  top: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border-color: transparent;
+  cursor: pointer;
+  background-color: transparent;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modalMap__close {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.modalMap__close:hover {
+  opacity: 1;
+  transform: rotate(90deg);
+  fill: #0a8817;
+}
+.modalMap__close:active {
+  width: 24px;
+  fill: #f8d24e;
 }
 .modalMap__title {
   font-family: "Seymour One", sans-serif;

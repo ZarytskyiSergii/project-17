@@ -1,4 +1,6 @@
 header {
+    overflow: visible;
+
     background-color: #84a178;
 }
 
@@ -146,6 +148,7 @@ header {
     margin-top: 100px;
     margin-bottom: 78px;
     text-align: center;
+    
 
     & a {
         display: inline-block;

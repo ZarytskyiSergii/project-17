@@ -50,15 +50,44 @@
         line-height: 14px;
         letter-spacing: 0.01em;
     }
-    &__close {
-        position: absolute;
-        cursor: pointer;
-        top: 17px;
-        right: 17px;
-        background: transparent;
-        border: none;
-        padding: 0;
-    }
+    &__close{
+            position: absolute;
+            top: 12px;
+            right: 12px;
+    
+            display: inline-flex;
+            align-items: center;
+            padding: 0;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+    
+            border-radius: 50%;
+            border-color: transparent;
+            cursor: pointer;
+            background-color: transparent;
+    
+            transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    
+            & {
+                opacity: 0.7;
+                cursor: pointer;
+            }
+    
+            &:hover {
+                opacity: 1;
+                transform: rotate(90deg);
+                fill: #0a8817;
+            }
+    
+            &:active {
+                width: 24px;
+                fill: #f8d24e;
+            }
+        }
     &__title {
         font-family: 'Seymour One', sans-serif;
         font-size: 20px;
