@@ -1,5 +1,6 @@
 .gallery {
-    
+    margin-top: -29px;
+    padding-top: 29px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -11,6 +12,7 @@
     
     // Mobile
     @media screen and (min-width:480px) {
+
 
         background-image: url(../images/background/background_mobile1x.png);
         
@@ -52,4 +54,27 @@
     @include dq(desktop) {
         padding-bottom: 228px;
     }
+}
+
+.gallery{
+
+    margin-top: -29px;
+        padding-top: 37px;
+
+    @media screen and (min-width:480px) {
+     
+        margin-top: -29px;
+            padding-top: 31px;
+    }
+
+         @media screen and (min-width:768px) {
+    
+             margin-top: -29px;
+             padding-top: 145px;
+         }
+        @media screen and (min-width:1200px) {
+    
+            margin-top: -80px;
+            padding-top: 98px;
+        }
 }
