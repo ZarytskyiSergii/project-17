@@ -1,80 +1,106 @@
 .gallery {
-    margin-top: -29px;
-    padding-top: 29px;
-    width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 393px;
+  // overflow: hidden;
+  // Mobile
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/background/background_mobile1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background/background_mobile2x.png);
+    }
+  }
+  // Tablet
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/background/background_tablet1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background/background_tablet2x.png);
+    }
+
+    @include dq(tablet) {
+      padding-bottom: 479px;
+    }
+  }
+
+  // Desktop
+  @include dq(only-tablet) {
+    background-image: url(../images/background/background_desktop1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background/background_desktop2x.png);
+    }
+
+    padding-bottom: 379px;
+  }
+
+  @include dq(desktop) {
+    padding-bottom: 228px;
+  }
+  &__img {
     margin-left: auto;
     margin-right: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-bottom:393px;
-    overflow: hidden;
+    width: 280px;
+    height: 130px;
+    border-radius: 8px;
+    // transform: translateY(-32px);
     
-    // Mobile
-    @media screen and (min-width:480px) {
 
-
-        background-image: url(../images/background/background_mobile1x.png);
-        
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/background/background_mobile2x.png);
-            }
-                
-    }
-    // Tablet
-    @media screen and (min-width:768px) {
-        background-image: url(../images/background/background_tablet1x.png);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/background/background_tablet2x.png);
-        }
-
-                                @include dq(tablet) {
-                                    padding-bottom: 479px;
-                                }
-    }
-
-    // Desktop
     @include dq(only-tablet) {
-        background-image: url(../images/background/background_desktop1x.png);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/background/background_desktop2x.png);
-        }
-
-        padding-bottom: 379px;
+        width: 705px;
+        height: 327px;
+        border-radius: 18px;
+        // transform: translateY(-144px);
+        
     }
 
     @include dq(desktop) {
-        padding-bottom: 228px;
+        width: 1013px;
+        height: 422px;
+        border-radius: 24px;
+        // transform: translateY(-98px);
+        
     }
 }
-
-.gallery{
-
-    margin-top: -29px;
-        padding-top: 37px;
-
-    @media screen and (min-width:480px) {
-     
-        margin-top: -29px;
-            padding-top: 31px;
+&__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-24px);
+  
+    @media screen and (min-width: $tablet) {
+      transform: translateY(-164px);
     }
+  
+    @media screen and (min-width: $desktop) {
+      transform: translateY(-94px);
+    }
+}
+}
 
-         @media screen and (min-width:768px) {
-    
-             margin-top: -29px;
-             padding-top: 145px;
-         }
-        @media screen and (min-width:1200px) {
-    
-            margin-top: -80px;
-            padding-top: 98px;
-        }
+
+.slick-dots {
+//   list-style: none;
+  margin: 0;
+  padding: 0;
+  & li button:before {
+    font-size: 12px !important;
+    color: $swiper-color !important;
+  }
+
+  & li.slick-active button:before {
+    font-size: 12px;
+    color: $hero-color !important;
+  }
 }
