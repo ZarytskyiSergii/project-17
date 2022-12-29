@@ -1,8 +1,8 @@
 <section class="gallery">
     <h2 class="visually-hidden">gallery</h2>
-    <div>
-        <ul class="gallery__slider gallery__list">
-            <li class="gallery__item">
+    <div class="swiper_gallery gallery__slider">
+        <ul class="swiper-wrapper gallery__list">
+            <li class="swiper-slide gallery__item">
                 <picture>
                     <source srcset="
               ./images/ice/icecream1-1x.webp 1x,
@@ -14,7 +14,7 @@
             " src="./images/ice/icecream1-1x.jpg" alt="морозиво" />
                 </picture>
             </li>
-            <li class="gallery__item">
+            <li class="swiper-slide gallery__item">
                 <picture>
                     <source srcset="
               ./images/ice/icecream2-1x.webp 1x,
@@ -26,7 +26,7 @@
             " src="./images/ice/icecream2-1x.jpg" alt="морозиво" />
                 </picture>
             </li>
-            <li class="gallery__item">
+            <li class="swiper-slide gallery__item">
                 <picture>
                     <source srcset="
               ./images/ice/icecream3-1x.webp 1x,
@@ -42,9 +42,9 @@
     </div>
     <!-- слайдер -->
     <h2 class="visually-hidden">Response</h2>
-    <div>
-        <ul class="customers__slider customers__list">
-            <li class="customers__item">
+    <div class="swiper_customers customers__slider">
+        <ul class="swiper-wrapper customers__list">
+            <li class="swiper-slide customers__item">
                 <img srcset="
             ./images/customer/emily1-1x.jpg,
             ./images/customer/emily1-2x.jpg
@@ -57,7 +57,7 @@
                 </p>
                 <p class="customers__name">Emily, Los Angeles</p>
             </li>
-            <li class="customers__item">
+            <li class="swiper-slide customers__item">
                 <img srcset="
             ./images/customer/bryan2-1x.jpg,
             ./images/customer/bryan2-2x.jpg
@@ -68,7 +68,7 @@
                 </p>
                 <p class="customers__name">Bryan, New-York</p>
             </li>
-            <li class="customers__item">
+            <li class="swiper-slide customers__item">
                 <img srcset="
             ./images/customer/diana3-1x.jpg,
             ./images/customer/diana3-1x.jpg
@@ -81,6 +81,6 @@
                 <p class="customers__name">Diana, Chicago</p>
             </li>
         </ul>
-        <!-- <div class="swiper-pagination customers__pagination"></div> -->
+        <div class="swiper-pagination customers__pagination"></div>
     </div>
 </section>
